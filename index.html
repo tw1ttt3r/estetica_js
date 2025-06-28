@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Estetica</title>
+        <script src="models/Usuario.js"></script>
+        <script src="models/Estetica.js"></script>
+        <script src="models/Dueno.js"></script>
+        <script src="models/Mascota.js"></script>
+        <script src="models/Empleado.js"></script>
+        <script src="main.js" defer></script>
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <body>
+        <header></header>
+        <main>
+            <section class="login container containeron">
+                <form class="form" id="login">
+                    <input placeholder="Usuario" class="controls" type="text" name="user">
+                    <input placeholder="Contraseña" class="controls" type="password" name="pass">
+                    <input type="submit" value="Iniciar Sesion">
+                    <button id="regitrar">Registrar Usuario</button>
+                </form>
+            </section>
+            <section class="registro container containeroff">
+                <form class="form" id="registro">
+                    <input placeholder="Usuario" class="controls" type="text" name="user">
+                    <input placeholder="Contraseña" class="controls" type="password" name="pass">
+                    <input placeholder="Correo" class="controls" type="email" name="email">
+                    <div class="container-radios">
+                        <input class="controls" type="radio" name="type" value="2"> Dueño
+                        <input class="controls" type="radio" name="type" value="1"> Empleado
+                    </div>
+                    <input type="submit" value="Registrar Usuario">
+                    <button id="regresarLogin">Iniciar Sesion</button>
+                </form>
+            </section>
+            <section class="session container containeroff">
+                session
+                <section></section>
+                <section></section>
+                <section></section>
+            </section>
+        </main>
+    </body>
+</html>
