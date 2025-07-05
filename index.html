@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Estetica</title>
+        <script src="store/store.js"></script>
         <script src="models/Usuario.js"></script>
         <script src="models/Estetica.js"></script>
         <script src="models/Dueno.js"></script>
@@ -13,18 +14,31 @@
         <link rel="stylesheet" href="main.css">
     </head>
     <body>
-        <header></header>
+        <header>
+            <nav>
+                <ul>
+                    <li>
+                        <p>Sesion: -</p>
+                    </li>
+                    <li>
+                        <button id="closesession">Cerrar Sesión</button>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <button id="saveStorage">Storage</button>
         <main>
             <section class="login container containeron">
                 <form class="form" id="login">
                     <input placeholder="Usuario" class="controls" type="text" name="user">
                     <input placeholder="Contraseña" class="controls" type="password" name="pass">
                     <input type="submit" value="Iniciar Sesion">
-                    <button id="regitrar">Registrar Usuario</button>
+                    <button id="registrar">Registrar Usuario</button>
                 </form>
             </section>
             <section class="registro container containeroff">
                 <form class="form" id="registro">
+                    <input placeholder="Nombre" class="controls" type="text" name="name">
                     <input placeholder="Usuario" class="controls" type="text" name="user">
                     <input placeholder="Contraseña" class="controls" type="password" name="pass">
                     <input placeholder="Correo" class="controls" type="email" name="email">
