@@ -12,4 +12,12 @@ class Usuario {
     cambiarCorreo() {}
 
     cambiarStatus() {}
+
+    getId() {
+        return this.id;
+    }
+
+    getUsuario() {
+        return this.usuario;
+    }
 }
